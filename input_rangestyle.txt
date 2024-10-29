@@ -1,0 +1,35 @@
+<input
+  type="range"
+  min="1"
+  max="10"
+  value={range}
+  onChange={handleRangeInput}
+  className="w-full h-1 bg-[#81b888] outline-none border border-[#81b888] appearance-none cursor-pointer accent-black rounded-none"
+  style={{
+    accentColor: "#000", // Use Tailwind’s `accent-*` colors for accent control
+  }}
+/>
+
+<style jsx>
+{`
+  input[type='range']::-webkit-slider-thumb {
+    height: 20px; /* Thumb size */
+    width: 20px;
+    border-radius: 50%; /* Rounded thumb */
+    background-color: black; /* Accent color */
+    border: 4px solid #81b888; /* Thumb border color */
+    cursor: pointer;
+    appearance: none;
+  }
+
+  input[type='range']::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border: 4px solid #81b888;
+    cursor: pointer;
+    appearance: none;
+  }
+`}
+</style>
