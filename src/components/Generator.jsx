@@ -48,10 +48,10 @@ const Generator = () => {
                 setStrength("HIGH");
                 setStrengthColor({
                     ...strengthColor,
-                    barOne:"lime-500",
-                    barTwo:"lime-500",
-                    barThree:"lime-500",
-                    barFour:"lime-500",
+                    barOne:"bg-lime-500",
+                    barTwo:"bg-lime-500",
+                    barThree:"bg-lime-500",
+                    barFour:"bg-lime-500",
                 });
                 // setStrengthColorOne("lime-500");
                 // setStrengthColorTwo("lime-500");
@@ -63,9 +63,9 @@ const Generator = () => {
                 if(trueConditions === 3){
                     setStrengthColor({
                         ...strengthColor,
-                        barOne:"orange-500",
-                        barTwo:"orange-500",
-                        barThree:"orange-500",
+                        barOne:"bg-orange-500",
+                        barTwo:"bg-orange-500",
+                        barThree:"bg-orange-500",
                         barFour:"transparent",
                     });
                     // setStrengthColorOne("orange-500");
@@ -76,8 +76,8 @@ const Generator = () => {
                 else{
                     setStrengthColor({
                         ...strengthColor,
-                        barOne:"orange-500",
-                        barTwo:"orange-500",
+                        barOne:"bg-orange-500",
+                        barTwo:"bg-orange-500",
                         barThree:"transparent",
                         barFour:"transparent",
                     });
@@ -92,7 +92,7 @@ const Generator = () => {
                 setStrength("LOW");
                 setStrengthColor({
                     ...strengthColor,
-                    barOne:"red-500",
+                    barOne:"bg-red-500",
                     barTwo:"transparent",
                     barThree:"transparent",
                     barFour:"transparent",
@@ -211,10 +211,10 @@ const Generator = () => {
                 <p className='text-white font-primaryFont text-xl uppercase transition-colors duration-150 ease-linear'>{strength}</p>
 
                 <div className='bars flex items-center gap-2'>
-                    <div className={`w-2 h-5 border border-white bg-${strengthColor.barOne} transition-all duration-150 ease-linear`}></div>
-                    <div className={`w-2 h-5 border border-white bg-${strengthColor.barTwo} transition-all duration-150 ease-linear`}></div>
-                    <div className={`w-2 h-5 border border-white bg-${strengthColor.barThree} transition-all duration-150 ease-linear`}></div>
-                    <div className={`w-2 h-5 border border-white bg-${strengthColor.barFour} transition-all duration-150 ease-linear`}></div>
+                    <div className={`w-2 h-5 border border-white ${strengthColor.barOne} transition-all duration-150 ease-linear`}></div>
+                    <div className={`w-2 h-5 border border-white ${strengthColor.barTwo} transition-all duration-150 ease-linear`}></div>
+                    <div className={`w-2 h-5 border border-white ${strengthColor.barThree} transition-all duration-150 ease-linear`}></div>
+                    <div className={`w-2 h-5 border border-white ${strengthColor.barFour} transition-all duration-150 ease-linear`}></div>
                 </div>
             </div>
         </div>
